@@ -23,8 +23,3 @@ git add .
 git commit -m 'Commit de inicio'
 
 git push origin master
-
-
-
-
-
