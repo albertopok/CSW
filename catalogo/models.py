@@ -5,6 +5,7 @@ import collections
 # Create your models here.
 class Catalogo(models.Model):
     name = models.CharField(max_length=120, blank = False, null = False)
+    url = models.TextField(max_length=500)
     json_layers= JSONField(load_kwargs={'object_pairs_hook': collections.OrderedDict})
     timestamp = models.DateTimeField(auto_now_add = True, auto_now = False)
     updated = models.DateTimeField(auto_now_add = False, auto_now = True)

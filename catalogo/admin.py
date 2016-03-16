@@ -3,7 +3,7 @@ from .models import Catalogo
 # Register your models here.
 
 class CatalogoAdmin(admin.ModelAdmin):
-    list_display = ["__unicode__", "timestamp","updated"]
+    list_display = ["__unicode__", "timestamp","updated","name","url"]
     class Meta:
         model=Catalogo
 
